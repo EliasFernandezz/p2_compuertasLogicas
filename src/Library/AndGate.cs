@@ -4,12 +4,18 @@ public class AndGate : IGate{
 
     public bool Output{
         get{
-            if (this.Input1.get() && this.Input2.get()) {
+            if (this.Input1.Value && this.Input2.Value) {
                 return true;
             }
             else{
                 return false;
             }
         }
+    }
+
+    public AndGate(ILogicValue input1, ILogicValue input2)
+    {
+        this.Input1 = input1;
+        this.Input2 = input2;
     }
 }

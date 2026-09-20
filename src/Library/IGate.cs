@@ -1,3 +1,3 @@
 public interface IGate{
-    public bool Output{get;}
+    bool Output{get;}
 }
